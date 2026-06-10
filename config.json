@@ -1,0 +1,26 @@
+{
+  "providers": {
+    "antropic": {
+      "models": [
+        "opus-4.8",
+        "sonnet-4.7"
+      ]
+    },
+    "openai": {
+      "models": [
+        "gpt-5.5",
+        "gpt-3.5"
+      ]
+    },
+    "google": {
+      "models": [
+        "gemini-3",
+        "gemini-2-mini"
+      ],
+      "api_key": ""
+    }
+  },
+  "config": {
+    "currentModel": "opus-4"
+  }
+}
