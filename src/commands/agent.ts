@@ -1,5 +1,5 @@
 import { Command } from "commander";
-import { agentLook } from "../agent/agent";
+import { runAgentLoop } from "../../agent";
 
 export const agentCommand = new Command("agent")
   .description('Runs the agent')
@@ -10,9 +10,6 @@ export const agentCommand = new Command("agent")
       return;
     } else {
       const initMessage = options.prompt;
-      const responseStream = await agentLook(initMessage);
-      for await (const chunk of responseStream) {
-        process.stdout.write(chunk.text);
-      }
+      await runAgentLoop(initMessage);
     }
   });

@@ -4,7 +4,7 @@ import { agentCommand } from './src/commands/agent';
 import { providerCommand } from './src/commands/providers';
 
 program
-  .name('loop')
+  .name('plum')
   .description('an opionated, minimal AI agent')
   .version('0.0.1')
   .addCommand(modelsCommand)
