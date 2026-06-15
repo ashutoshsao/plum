@@ -3,7 +3,7 @@ import { Type } from "@google/genai";
 import { Env } from "./src/Env";
 import { promisify } from "node:util";
 import { exec } from "node:child_process";
-const ai = new GoogleGenAI({ apiKey: Env.gemini_api_key_3 });
+const ai = new GoogleGenAI({ apiKey: Env.gemini_api_key });
 const execAsync = promisify(exec);
 
 //tool definition
